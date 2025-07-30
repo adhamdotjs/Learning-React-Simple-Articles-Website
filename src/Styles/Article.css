@@ -1,0 +1,109 @@
+.card {
+	color: var(--text-color);
+	display: flex;
+	align-items: center;
+	gap: 19px;
+	margin: 40px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	.img-container {
+		width: 125px;
+		height: 168px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+		}
+	}
+	.info {
+		width: 100%;
+		max-width: 900px;
+		.location {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			.country {
+				display: flex;
+				gap: 4px;
+				img {
+					width: 9px;
+				}
+				span {
+					letter-spacing: 3px;
+					text-transform: uppercase;
+				}
+			}
+			a {
+				color: var(--text-color);
+				outline: none;
+			}
+		}
+		.content {
+			h2 {
+				font-size: 35px;
+				margin: 7px 0 17px 0;
+			}
+			time {
+				display: block;
+				font-weight: bold;
+				margin-bottom: 9px;
+			}
+			p {
+				line-height: 150%;
+			}
+		}
+	}
+}
+hr {
+	margin: 0 40px;
+	height: 2px;
+	background-color: var(--links-color);
+	border: none;
+	opacity: 0.4;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.card {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+		.img-container {
+			width: 100%;
+			height: auto;
+		}
+		.info {
+			.content {
+				h2 {
+					font-size: 24px;
+					margin: 12px 0 17px 0;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 376px) {
+	.location {
+		.country {
+			span {
+				font-size: 13px;
+			}
+		}
+		a {
+			font-size: 10px;
+		}
+	}
+}

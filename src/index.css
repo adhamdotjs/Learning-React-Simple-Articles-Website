@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+:root {
+	--main-color: #f55a5a;
+  --text-color: #2B283A;
+  --links-color: #918E9B;
+}
+
+body {
+	font-family: "Inter";
+}
