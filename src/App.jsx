@@ -6,10 +6,10 @@ function App() {
 	// console.log(data);
 	const result = data.map((item, index) => {
 		return (
-			<>
-				<Article {...item} key={item.id} />
+			<div key={item.id}>
+				<Article {...item} />
 				{index !== data.length - 1 && <hr />}
-			</>
+			</div>
 		);
 	});
 	return (

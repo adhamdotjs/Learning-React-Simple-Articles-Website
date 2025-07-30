@@ -42,7 +42,7 @@
 				}
 			}
 			a {
-				color: var(--text-color);
+				color: var(--links-color);
 				outline: none;
 			}
 		}
