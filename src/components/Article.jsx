@@ -5,12 +5,12 @@ function Article({ img, title, country, googleMapsLink, dates, text }) {
 	return (
 		<article className="card">
 			<div className="img-container">
-				<img src={img.src} alt="" />
+				<img src={img.src} alt={img.alt} loading="lazy" />
 			</div>
 			<div className="info">
 				<div className="location">
 					<div className="country">
-						<img src={locationIcon} alt="Location Icon" />
+						<img src={locationIcon} alt="Location Icon" loading="lazy" />
 						<span>{country}</span>
 					</div>
 					<a href={googleMapsLink}>View On Google Maps</a>
